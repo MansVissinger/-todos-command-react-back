@@ -10,7 +10,9 @@ const todoSchema = mongoose.Schema({
         default: "61a0da17add1119cca5e5666",
         type: mongoose.Schema.Types.ObjectId,
         ref:"Category"
-    }
+    },
+}, {
+    timestamps: true
 })
 
 const ToDo = mongoose.model("ToDo", todoSchema)
